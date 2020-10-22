@@ -1,0 +1,322 @@
+.header {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 70px;
+    display: block;
+    height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fefefe;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    color: #333;
+}
+.header h1 {
+    display: block;
+}
+.center-box {
+    display: block;
+    width: inherit;
+    height: auto;
+    
+}
+.middlePart {
+    width: 100%;
+    min-width: 1240px;
+}
+.formContenet {
+    display: block;
+    position:relative;
+    top:0px;
+    left:0px;
+    float: left;
+    margin-left: 15%;
+    width: 350px;
+}
+.logInForm {
+    display: block;
+    width: 100%;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    color: #333;
+    font-weight: 600;
+}
+.inputName {
+    margin-top:20px;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+.inputName input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border-color: #c6c8ca;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.inputName input:focus {
+    border-color: #3498db;
+}
+.inputName label {
+    display: block;
+    margin-bottom: 10px;
+}
+.inputPassword {
+    margin-top:20px;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+.inputPassword  input {
+    display: block;
+    padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    border-color: #c6c8ca;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.inputPassword  input:focus {
+    border-color: #3498db;
+}
+.inputPassword label {
+    display: block;
+    margin-bottom: 10px;
+}
+.inputPassword span {
+    display: block;
+    margin-top: 10px;
+}
+.inputPassword span a{
+    display: block;
+    margin-left: 230px;
+    width: 120px;
+    margin-right: 10px;
+    color: #3498db;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.buttomContener {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+.buttomContener input {
+  width: 100%;
+  height: 100%;
+  background-color: #ededee;
+  border: none;
+  border-radius: 3px;
+  color: #333;
+  padding: 16px 27px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.buttomContener input:hover {
+    background-color: #e8e8e8;
+}
+.fbvk {
+    display: block;
+    position:relative;
+    top: 10px;
+    margin-left: auto;
+    right: 15%;
+    background: #fefefe;
+    width: 500px;
+    height: 240px;
+}
+.fbvkOR {
+    display: block;
+    position:relative;
+    float: left;
+    top: 10px;
+    left: 5px;
+    background: #fefefe;
+    width: 100px;
+    height: 150px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    font-weight: 400;
+}
+.fbvkOR span {
+    display: block;
+    position: relative;
+    top: 50%;
+    width: auto;
+    height: auto;
+    
+}
+.fbvkLinks {
+    display: block;
+    position:relative;
+    top: 10px;
+    margin-left: auto;
+    right: 5%;
+    width: 350px;
+    height: 150px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    font-weight: 400;
+}
+
+.fbvkLinks h2 {
+    display: block;
+    width: 100px;
+    height: 20px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    font-weight: 400;
+}
+.fbvkLinks li{
+    display: block;
+    float: left;
+    position:relative;
+    top: 10px;
+    margin-left: 10px;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.fbvkLinks li a{
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+.fbvkLinks li:nth-child(1){
+    background: #424b98;
+}
+.fbvkLinks li:nth-child(2){
+    background: #4ca1f0;
+}
+.fbvkLinks li:nth-child(3){
+    background: #e52c25;
+}
+.fbvkLinks li:nth-child(4){
+    background: #465f8e;
+}
+.fogotPasswordForm {
+    position: fixed;
+    top: 150px;
+    left: 450px;
+    display: none;
+    width: 400px;
+    height: 250px;
+    background: #fefefe;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+    z-index: 1;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.fogotPasswordClose{
+    display: block;
+    position: relative;
+    top:20px;
+    left: 300px;
+    height: 20px;
+    width: 100px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fogotPasswordMain{
+    display: block;
+    position: relative;
+    left: 25px;
+    top: 30px;
+    width: 350px;;
+    height: 30px;
+
+}
+.fogotPasswordForm form {
+    display: block;
+    position: relative;
+    top:40px;
+    left: 25px;
+    width: 350px;
+    height: auto;
+
+}
+.fogotPasswordTitle{
+    display: block;
+    width: 100%;
+    height: 30px;
+
+}
+.fogotPasswordText{
+    background: #ededee;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fogotPasswordText textarea{
+    display: block;
+    width: 100%;
+    height: 30px;
+    resize: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+    vertical-align: top;
+}
+
+.forgotPasswordSubmit {
+    display: block;
+    position: relative;
+    top:20px;
+    left: 250px;
+    width: 100px;
+    height: 30px;
+    background-color: #ededee;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fogotPasswordSubmit:hover {
+    background-color: #e8e8e8;
+}
+.loginPageErrorBlock {
+    position: relative;
+    top: 50px;
+    left: 200px;
+    display: block;
+    clear: both;
+    width: 300px;
+    color: red;
+}

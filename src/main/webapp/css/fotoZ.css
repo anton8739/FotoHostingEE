@@ -1,0 +1,636 @@
+.userAccountMenu{
+    display: block;
+    vertical-align: top;
+    position:relative;
+    margin-left: auto;
+    right: 10px;
+    top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.userAccountMenu a{
+     display: block;
+    width: 100%;
+    height: 30px;
+   
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    line-height: 30px;
+}
+.userAccountMenu:hover .hiddenUserAccountMenu{
+    display: block;
+    color: #333;
+}
+.hiddenUserAccountMenu {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background: #fefefe;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+
+}
+.hiddenUserAccountMenu a{
+    font-size: 14px;
+}
+.userAccountMenu li{
+    display: block;
+    padding-left: 5%;
+    width: 95%;
+    height: 30px;
+    
+}
+
+.userAccountMenu :hover {
+    color: #2070b1;
+}
+.userAccountMenu img{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+
+}
+.fotoPageFotoContener {
+    width: 100%;
+}
+.fotoPageFoto {
+    width: 100%;
+    position: relative;
+    height: auto;
+    
+}
+.fotoPageFoto img {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+}
+.downFotoMenu {
+    display: block;
+    padding-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.fotoPageShare {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.downFotoMenuUser{
+    display: block;
+    float: left;
+    vertical-align: top;
+    position:relative;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.downFotoMenuUser a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    line-height: 30px;
+}
+.downFotoMenuUser img{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+
+}
+.downFotoMenuEdit {
+    display: block;
+    float: left;
+    position:relative;
+    width: 150px;
+    height: 30px;
+    
+}
+.downFotoMenuEdit img {
+    display: block;
+    position: relative;
+    margin-top:5px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.downFotoMenuEdit a {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    text-transform: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #3498db;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    
+}
+.downFotoMenuEdit a:hover {
+    text-decoration: underline;
+}
+.downFotoMenuDelete {
+    display: block;
+    float: left;
+    position:relative;
+    width: 150px;
+    height: 30px;
+    
+}
+.downFotoMenuDelete img {
+    display: block;
+    position: relative;
+    margin-top:5px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.downFotoMenuDelete a {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    text-transform: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #f72a2b;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    
+}
+.downFotoMenuDelete a:hover {
+    text-decoration: underline;
+}
+
+.downFotoMenuDownLoad {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    right: 100px;
+    width: 30px;
+    height: 30px;
+}
+.downFotoMenuDownLoad img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.downFotoMenuLike {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    top:-30px;
+    right: 0px;
+    width: 60px;
+    height: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #f72a2b;
+    font-weight: 500;
+    line-height: 30px;
+}
+.downFotoMenuLike a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.downFotoMenuLike span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    vertical-align: top;
+}
+.downFotoMenuLike img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.fotoDescription{
+    display: block;
+    width: 300px;
+    height: 250px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+}
+.fotoDescription span:nth-child(1){
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.fotoDescription span:nth-child(2){
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 100px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.fotoDescription span:nth-child(3){
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.fotoComment {
+    display: block;
+    width: 700px;
+    height: 100px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    
+}
+.fotoCommentLeftBlock {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 100px;
+    
+}
+.fotoCommentText {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 100px;  
+}
+.fotoCommentText span{
+    display: block;
+    position: relative;
+    padding: 5px;
+    top: 5px;
+    left: 10px;
+    width: 370px;
+    height: 80px;
+    background: #ededee;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fotoCommentDelete {
+    display: block;
+    float: left;
+    position:relative;
+    top: 30px;
+    left: 35px;
+    width: 150px;
+    height: 30px;
+    
+}
+.fotoCommentDelete img {
+    display: block;
+    position: relative;
+    margin-top:5px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.fotoCommentDelete a {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    text-transform: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #f72a2b;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    
+}
+.fotoCommentDelete a:hover {
+    text-decoration: underline;
+}
+.fotoCommentLike a{
+    display: inline-block;
+    position: relative;
+    top:30px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+}
+.fotoCommentLike span{
+    display: inline-block;
+    position: relative;
+    top:30px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: top;
+    
+}
+.fotoCommentLike img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.fotoAddNewComment{
+    display: block;
+    width: 700px;
+    height: 100px;
+
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.fotoAddNewCommentUser {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 100px;
+   
+}
+.fotoAddNewComment form {
+    display: block;
+    float: left;
+    width: 550px;
+    height: 100px;
+}
+
+.fotoAddNewCommentText {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 100px;
+
+}
+.fotoAddNewCommentText span {
+    display: block;
+    position: relative;
+    padding: 5px;
+    top: 5px;
+    left: 10px;
+    width: 370px;
+    height: 80px;
+    background: #ededee;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fotoAddNewCommentText textarea{
+    display: block;
+    width: 370px;
+    height: 80px;
+    resize: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+    vertical-align: top;
+}
+.fotoAddNewCommentSubmit {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 100px;
+}
+.fotoCommentUser{
+    display: block;
+    float: left;
+    vertical-align: top;
+    position:relative;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.fotoCommentUser a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    line-height: 30px;
+}
+.fotoCommentUser img{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+
+}
+.fotoCommentData {
+    display: block;
+    position: relative;
+    clear: both;
+    width: 150px;
+}
+.fotoCommentData span{
+    display: block;
+    clear: both;
+    height: 20px;
+    padding-left: 50px;
+    
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.fotoAddNewCommentUser{
+    display: block;
+    float: left;
+    vertical-align: top;
+    position:relative;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.fotoAddNewCommentUser a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    line-height: 30px;
+}
+.fotoAddNewCommentUser img{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+
+}
+.fotoAddNewCommentSubmit input{
+    display: none;
+}
+.fotoAddNewCommentSubmit {
+    display: block;
+    position: relative;
+    top:30px;
+    left: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: #ededee;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fotoAddNewCommentSubmit:hover {
+    background-color: #e8e8e8;
+}
+.fotoEditPage {
+    position: fixed;
+    top: 150px;
+    left: 450px;
+    display: none;
+    width: 400px;
+    height: 400px;
+    background: #fefefe;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+    z-index: 1;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.fotoEditPageClose{
+    display: block;
+    position: relative;
+    top:20px;
+    left: 300px;
+    height: 20px;
+    width: 100px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fotoEditPageMain{
+    display: block;
+    position: relative;
+    left: 25px;
+    top: 30px;
+    width: 350px;;
+    height: 30px;
+
+}
+.fotoEditPage form {
+    display: block;
+    position: relative;
+    top:40px;
+    left: 25px;
+    width: 350px;
+    height: auto;
+
+}
+.fotoEditPageTitle{
+    display: block;
+    width: 100%;
+    height: 30px;
+
+}
+.fotoEditPageDescription{
+    display: block;
+    width: 100%;
+    height: 30px;
+
+}
+.fotoEditPageTitleText{
+    background: #ededee;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fotoEditPageTitleText textarea{
+    display: block;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+    vertical-align: top;
+}
+.fotoEditPageDescriptionText {
+    background: #ededee;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.fotoEditPageDescriptionText textarea{
+    display: block;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+    vertical-align: top;
+}
+.fotoEditPageSubmit input{
+    display: none;
+}
+.fotoEditPageSubmit {
+    display: block;
+    position: relative;
+    top:20px;
+    left: 250px;
+    width: 100px;
+    height: 30px;
+    background-color: #ededee;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fotoEditPageSubmit:hover {
+    background-color: #e8e8e8;
+}

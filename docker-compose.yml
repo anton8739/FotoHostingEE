@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+    backend-java:
+      container_name: fotohosting
+      build: .
+      image: fotohosting
+
+      ports:
+      - 8080:8080
+      volumes:
+          - type: volume
+            source: vl_fotohosting
+            target: /usr/local/tomcat/webapps/files/
+      networks:
+            static-network:
+              ipv4_address: 172.27.128.1
+
+    db-postgres:
+      container_name: postgres
+      image: postgres:10
+      restart: always
+      environment:
+          POSTGRES_PASSWORD: postgres
+      ports:
+            - 54320:5432
+      volumes:
+          - type: volume
+            source: vl_postgres
+            target: /var/lib/postgresql/data
+      networks:
+            static-network:
+              ipv4_address: 172.27.128.2
+
+volumes:
+  vl_fotohosting:
+      external: true
+      name: vl_fotohosting
+  vl_postgres:
+      external: true
+      name: vl_postgres
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.27.0.0/16
