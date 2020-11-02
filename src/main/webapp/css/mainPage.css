@@ -1,0 +1,73 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainText {
+    color: #fefefe;
+    margin-top: 20vh;
+    text-align: center;
+}
+#loginButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    width: 80%;
+    height: 50px;
+}
+#footer{
+    background-color: #333;
+    color: #fefefe;
+}
+#footer span{
+    display: block;
+    line-height: 60px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-dialog {
+    margin: 0;
+    width: 100vw;
+}
+#modalWindow {
+    background: #fefefe;
+    border-radius: 5px;
+    width: 80vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+
+}
+#modalUserEditForm {
+    margin-top: 5vh;
+    color: #0e9b7f;
+
+}
+.modalUserEditHeader {
+    margin-top: 30px;
+    line-height: 60px;
+}
+#modalUserEditClose{
+    margin-right: 20px;
+    line-height: 60px;
+}
+#modalDeleteAccountWindow{
+    background: #fefefe;
+    border-radius: 5px;
+    width: 60vw;
+    margin-top: 10vh;
+    margin-left: 20vw;
+}
+#modalContactWindow {
+    background: #fefefe;
+    border-radius: 5px;
+    width: 60vw;
+    margin-top: 10vh;
+    margin-left: 20vw;
+}

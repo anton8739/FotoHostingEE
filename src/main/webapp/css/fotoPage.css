@@ -1,0 +1,260 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+.centered {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#left-menu {
+    list-style-type:none;
+}
+#left-menu span{
+    font-size: 18px;
+    font-weight: 700;
+}
+#left-menu li{
+    line-height: 40px;
+}
+#left-menu a {
+    text-decoration: none;
+    color: #333;
+}
+#left-menu a:hover {
+    text-decoration: none;
+     color: #587c34;
+}
+#UserMenuLeftUserName a {
+    font-size: 30px;
+    color: #333;
+    
+}
+#UserMenuLeftEdit a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #587c34;
+}
+#UserMenuLeftEdit a:hover {
+    text-decoration: underline;
+    color: #587c34;
+}
+#UserMenuLeftFollowers {
+    font-size: 18px;
+    font-weight: 400;
+}
+#UserMenuLeftFollowings {
+    font-size: 18px;
+    font-weight: 400;
+}
+#right-menu {
+    list-style-type:none;
+    width: fit-content;
+}
+#right-menu span{
+    font-size: 18px;
+    font-weight: 700;
+}
+#right-menu li{
+    line-height: 60px;
+}
+#right-menu a {
+    text-decoration: none;
+    color: #333;
+}
+#right-menu a:hover {
+    text-decoration: none;
+    color: #587c34;
+}
+#UserMenuRightImg {
+    font-size: 18px;
+}
+#UserMenuRightLikes {
+    font-size: 32px;
+}
+#UserMenuRightAddImgButtom{
+    width: 100%;
+}
+#mainIcon {
+    font-size: 210px;
+}
+
+#fotoMenuBar{
+    font-size: 18px;
+    line-height: 60px;
+    margin-top: 20px;
+    color: #fefefe;
+}
+.fotoUser {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fefefe;
+}
+.fotoUser i {
+    display: block;
+    float: left;
+    font-size: 60px;
+}
+.fotoUser span {
+    display: block;
+    margin-left: 10px;
+    float: left;
+    font-size:20px;
+}
+.fotoUser:hover {
+    text-decoration: none;
+    color: #0e9b7f;
+}
+.fotoEdit {
+    text-decoration: none;
+    color: #0e9b7f;
+}
+.fotoEdit:hover {
+    color: #0e9b7f;
+    text-decoration: underline;
+}
+.fotoDelete {
+    text-decoration: none;
+    color: #fc404c;
+}
+.fotoDelete:hover {
+    color: #fc404c;
+    text-decoration: underline;
+}
+.fotoDownload {
+    text-decoration: none;
+    color: #fefefe;
+}
+.fotoDownload:hover {
+    text-decoration: none;
+    color: #0e9b7f;
+}
+.fotoLike {
+    text-decoration: none;
+    color: #fefefe;
+}
+.fotoLike:hover {
+    text-decoration: none;
+    color: #0e9b7f;
+}
+.fotoPageMainImg {
+    width: 100%;
+}
+#fotoDescription {
+    color: #fefefe;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+#fotoDescription span{
+    display: block;
+    margin-top:20px;
+}
+#fotoDescription h2{
+    color: #0e9b7f;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#footer{
+    background-color: #333;
+    color: #fefefe;
+}
+#footer span{
+    display: block;
+    line-height: 60px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.commentBlockTitle {
+    display: block;
+    color: #fefefe;
+    color: #0e9b7f;
+    text-align: justify;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+#commentEntity {
+    width: 100%;
+    min-height: 110px;
+    padding-top: 10px;
+    background-color: #e8ebef;
+    border-radius: 3px; 
+}
+.commentUser {
+    color: #333;
+}
+.commentUser:hover {
+    color: #0e9b7f;
+    text-decoration: none;
+}
+.commentUser i{
+    display: block;
+    float: left;
+    font-size: 32px;
+    color: #333;
+}
+.commentUser span{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.CommentText {
+    width: 100%;
+    background: #cbcbcb;
+    border-radius: 3px;
+    min-height: 90px;
+    padding: 5px;
+}
+.CommentText span{
+    color: #333;
+    font-size: 14px;
+}
+#commentLikeMenu span{
+    font-size: 18px;
+}
+.commentLike {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+.commentLike:hover {
+    text-decoration: none;
+    color: #0e9b7f;
+}
+.commentDelete{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fc404c;
+}
+.commentDelete:hover{
+    color: #fc404c;
+    text-decoration: underline;
+}
+#commnetTextArea {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    height: auto;
+    resize: none;
+}
+#commentAddButtom{
+    margin-top: 10px;
+}
+.modal-dialog {
+    margin: 0;
+    width: 100vw;
+}
+#modalFotoWindow {
+    background: #fefefe;
+    border-radius: 5px;
+    width: 80vw;
+    margin-top: 10vh;
+    padding-top: 20px;
+    margin-left: 10vw;
+    
+}

@@ -4,6 +4,7 @@ import by.yurovski.command.Command;
 import by.yurovski.command.CommandFactory;
 import by.yurovski.command.redirect.FotoPageRedirect;
 import by.yurovski.command.redirect.UserAccountRedirectCommand;
+import by.yurovski.entity.User;
 import by.yurovski.enums.UserStatusEnum;
 import by.yurovski.manager.PathManager;
 
@@ -45,7 +46,8 @@ public class MainController  extends HttpServlet {
             if (currentCommand.equals("add-new-comment")){
               //  command.execute(request);
                 String fotoName=request.getParameter("foto");
-                int userId=Integer.parseInt(request.getSession().getAttribute("id").toString());
+
+                int userId=Integer.parseInt(request.getParameter("userId"));
                 response.sendRedirect("foto?userId="+userId+"&foto="+fotoName);
             }
             page = command.execute(request);

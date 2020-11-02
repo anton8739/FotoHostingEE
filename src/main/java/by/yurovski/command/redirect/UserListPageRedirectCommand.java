@@ -32,7 +32,11 @@ public class UserListPageRedirectCommand implements Command{
         }else{
             currentUserId=Integer.parseInt(request.getParameter("userId"));
         }
+
         String partOfName=request.getParameter("partOfName");
+        if(partOfName == null){
+            partOfName="";
+        }
         try {
             User user=UserService.getInstance().getUserById(currentUserId);
             User loginedUser=UserService.getInstance().getUserById(loginedUserId);

@@ -7,66 +7,81 @@
 <html>
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-    <link href="css/mainC.css" rel="stylesheet">
-    <link href="css/cssReset.css" rel="stylesheet">
-    <link href="css/loginR.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>InstaGod</title>
+    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/loginPage.css">
 </head>
 
 <body >
 
 <c:import url="/jsp/common/parts/guestNavBar.jsp"/>
-
-<div class="center-box">
-    <div class="header">
-        <h1><fmt:message key="buttom.loginPage.login" bundle="${rb}"/></h1>
-    </div>
-    <div class="middlePart">
-        <div class="formContenet">
-        <form class="logInForm" name="form1" method="post" action="controller">
-            <input type="hidden" name="command" value="log-in">
-                <div class="inputName">
-                    <label><fmt:message key="loginPage.text.email" bundle="${rb}"/></label>
-                    <input type="text" name="name" placeholder="<fmt:message key="loginPage.text.email" bundle="${rb}"/>">
-                </div>
-                <div class="inputPassword">
-                    <label><fmt:message key="loginPage.text.passoword" bundle="${rb}"/></label>
-                    <input type="password" name="password" placeholder="<fmt:message key="loginPage.text.passoword" bundle="${rb}"/>" >
-                    <span><a class="fogotPassword"><fmt:message key="loginPage.forgotPassword" bundle="${rb}"/></a></span>
-                </div>
-                <div class="buttomContener">
-                    <input type="submit" value="<fmt:message key="buttom.loginPage.login" bundle="${rb}"/>">
-                </div>
-        </form>
-        </div>
-    <div class="fbvk">
-        <div class="fbvkOR"><fmt:message key="loginPage.OR" bundle="${rb}"/></div>
-        
-        <div class="fbvkLinks">
-        <h2><span text="<fmt:message key="loginPage.login" bundle="${rb}"/>"></span></h2>
-        <ul>
-        <li><a>FaceBook</a></li>
-        <li><a>Twitter</a></li>
-        <li><a>Google</a></li>
-        <li><a>VK</a></li>
-        </ul>
+<div id="content" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="loginWord">
+            <span><h3><fmt:message key="buttom.loginPage.login" bundle="${rb}"/></h3></span>
+            </div>
         </div>
     </div>
-    </div>
-    <div class="loginPageErrorBlock">
-        <span>${requestScope.errorMassage}</span>
-    </div>
+    <div class="row">
+        <div class="col-lg-4 offset-lg-2">
+            <div id="modalUserEditForm" class="form-group">
+                <form name="form1" method="post" action="controller">
+                    <input type="hidden" name="command" value="log-in">
+                <label ><h5><fmt:message key="loginPage.text.email" bundle="${rb}"/></h5></label>
+                <input class="form-control" name="name"   placeholder="<fmt:message key="loginPage.text.email" bundle="${rb}"/>">
+                <label ><h5><fmt:message key="loginPage.forgotPassword" bundle="${rb}"/></h5></label>
+                <input class="form-control" type="password" name="password"  placeholder="<fmt:message key="loginPage.forgotPassword" bundle="${rb}"/>">
 
+                <button type="submit" class="btn btn-success btn-lg"><fmt:message key="buttom.loginPage.login" bundle="${rb}"/></button>
+                </form>
+                <div style="color: #fd4650">${requestScope.errorMassage}</div>
+            </div>
+            
+            </div>
+        <div class="col-lg-4">
+            
+                    <div id="myslider3" class="juicyslider">
+                        <ul>
+                            <li><img src="http://drawings-girls.ucoz.net/2016/12/dlinnovolosaya-blondinka-s-tigrom.jpg" alt="Juicy Slider 1"></li>
+                            <li><img src="http://drawings-girls.ucoz.net/2016/12/neobichnaya-devushka-s-orujiem.jpg" alt="Juicy Slider 2"></li>
+                            <li><img src="http://drawings-girls.ucoz.net/2016/12/misticheskaya-devushka-s-trohpaloi-lapoi.jpg" alt="Juicy Slider 3"></li>
+                        </ul>
+                        <div class="mask"></div>
+                    </div>
+
+             
+            </div>
+    </div>
+    </div>
+<div id="footer" class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col"><span>CopyRight <i class="fa fa-copyright" aria-hidden="true"></i> 2020. By Anton Yurovski</span></div>
+    </div>   
 </div>
-<div class="fogotPasswordForm">
-    <a class="fogotPasswordClose" ><fmt:message key="js.forgotPassword.buttom.close" bundle="${rb}"/></a>
-    <label class="fogotPasswordMain"><fmt:message key="js.forgotPassword.main" bundle="${rb}"/></label>
-    <form name="forgotPassword">
-        <label id="fogotPasswordTitleID" class="fogotPasswordTitle"><fmt:message key="js.forgotPassword.text" bundle="${rb}"/></label>
-        <div id="fogotPasswordTextID" class="fogotPasswordText"><textarea name="loginemail" placeholder="<fmt:message key="js.forgotPassword.text" bundle="${rb}"/>"></textarea></div>
-        <label id="forgotPasswordSubmitID" class="forgotPasswordSubmit"><fmt:message key="js.forgotPassword.buttom.send" bundle="${rb}"/></label>
-    </form>
-</div>
-<c:import url="/jsp/common/parts/links.jsp"/>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://bootstraptema.ru/plugins/2017/juicy-slider/css/juicyslider-min.css" />
+<script src="https://bootstraptema.ru/plugins/2017/juicy-slider/js/jquery-1.10.2.js"></script>
+<script src="https://bootstraptema.ru/plugins/2017/juicy-slider/js/jquery-ui.min.js"></script>
+<script src="https://bootstraptema.ru/plugins/2017/juicy-slider/js/juicyslider-min.js"></script>
+<script>
+$(function() {
+$('#myslider3').juicyslider({
+width: '100%',
+mask: "strip",
+bgcolor: "#000",
+autoplay: 6000,
+shuffle: false,
+show: {effect: 'puff', duration: 5000},
+hide: {effect: 'puff', duration: 3000},
+});
+});
+</script>
 </body>
 </html>

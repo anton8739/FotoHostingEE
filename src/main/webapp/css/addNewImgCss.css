@@ -1,0 +1,52 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+.centered {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    margin-top: 10vh;
+    min-height: 60vh;
+    margin-bottom: 12vh;
+    padding: 20px;
+    color: #fefefe;
+}
+#drop-area.highlight {
+    border-color: #3dd76f;
+}
+.my-form {
+    margin-bottom: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.button:hover {
+    background: #ddd;
+}
+#fileElem {
+    display: none;
+}
+#fileSubmit{
+    display: none;
+}
+#footer{
+    background-color: #333;
+    color: #fefefe;
+}
+#footer span{
+    display: block;
+    line-height: 60px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

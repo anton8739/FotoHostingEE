@@ -7,59 +7,69 @@
 <html>
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-    <link href="css/mainC.css" rel="stylesheet">
-    <link href="css/cssReset.css" rel="stylesheet">
-    <link href="css/followings.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>InstaGod</title>
+    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/following.css">
 </head>
 
 <body >
-
 <c:import url="/jsp/common/parts/navBar.jsp"/>
-<div class="mainImg">
-    
-</div>
 <c:import url="/jsp/common/parts/userAccountMenu.jsp"/>
-<div class="userCont">
-    <div class="userM">
-        <div><span><fmt:message key="followingsPage.text.main" bundle="${rb}"/> </span><span>${requestScope.currentUser.getLogin()}</span></div>
-        <a href="controller?userId=${requestScope.currentUser.getId()}&command=user-sort&from=followings&sort=new"><span><fmt:message key="buttom.userAccount.new" bundle="${rb}"/></span></a>
-        <a href="controller?userId=${requestScope.currentUser.getId()}&command=user-sort&from=followings&sort=old"><span><fmt:message key="buttom.userAccount.old" bundle="${rb}"/></span></a>
+<div id="userMenuBottomBar" class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-5"><fmt:message key="followingsPage.text.main" bundle="${rb}"/> ${requestScope.currentUser.getLogin()}</div>
+        <div class="col-lg-1"><a href="controller?userId=${requestScope.currentUser.getId()}&command=user-sort&from=followings&sort=old"><fmt:message key="buttom.userAccount.new" bundle="${rb}"/></a></div>
+        <div class="col-lg-1"><a href="controller?userId=${requestScope.currentUser.getId()}&command=user-sort&from=followings&sort=new"><fmt:message key="buttom.userAccount.old" bundle="${rb}"/></a></div>
     </div>
+</div>
+<div id="folCont" class="container-fluid">
     <c:choose>
         <c:when test="${not empty requestScope.followingsMap}">
             <c:forEach items="${requestScope.followingsMap}" var="following">
-                <div class="userItem">
-                    <div class="userItemImg"><img src="img/userIcon.png"></div>
-                    <div class="userItemName"><a href="?command=user-account-redirect&userId=${following.key.getId()}"><span>${following.key.getLogin()}</span></a></div>
-
-                    <div class="userItemUnsubscribe" ><a id="followUnfollowHref${following.key.getId()}" name="${following.key.getId()}" >
-                        <c:choose>
-                            <c:when test="${following.value == 1}">
-                                <span id="followUnfollowSpan${following.key.getId()}" class="userItemSubscribeS2"><fmt:message key="buttom.unsubscribe" bundle="${rb}"/></span>
-                            </c:when>
-                            <c:otherwise>
-                                <span id="followUnfollowSpan${following.key.getId()}" class="userItemSubscribeS1"><fmt:message key="buttom.subscribe" bundle="${rb}"/></span>
-                            </c:otherwise>
-                        </c:choose>
-                    </a></div>
+                <div class="row">
+                    <div class="col-lg-3 offset-lg-1 col-md-4 col-sm-5">
+                        <div class="follower">
+                            <a href="#">
+                                <i  class="fa fa-user-circle-o fa-fw"></i>
+                                <span><a href="?command=user-account-redirect&userId=${following.key.getId()}">${following.key.getLogin()}</a></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div id="followUnfollow${following.key.getId()}" name="${following.key.getId()}" class="folbuttom">
+                            <c:choose>
+                                <c:when test="${following.value == 1}">
+                                    <a class="btn btn-secondary" id="followUnfollowSpan${following.key.getId()}"><fmt:message key="buttom.unsubscribe" bundle="${rb}"/></a>
+                                </c:when>
+                                <c:otherwise>
+                                    <a class="btn btn-info" id="followUnfollowSpan${following.key.getId()}"><fmt:message key="buttom.subscribe" bundle="${rb}"/></a>
+                                </c:otherwise>
+                            </c:choose>
+                        </div>
+                    </div>
                 </div>
             </c:forEach>
-
         </c:when>
         <c:otherwise>
-            <div class="userItem">
-                Нет подписок.
+            <div class="row">
+                <fmt:message key="followersPage.text.empty" bundle="${rb}"/>
             </div>
         </c:otherwise>
     </c:choose>
-    <script>
-        var jTextSubscribe='<fmt:message key="buttom.subscribe" bundle="${rb}"/>';
-        var jTextUnSubscribe='<fmt:message key="buttom.unsubscribe" bundle="${rb}"/>';
-        var jLoginedUserId="${sessionScope.id}";
-        var jcurrentUserId="${requestScope.currentUser.getId()}";
-    </script>
-    <c:import url="/jsp/common/parts/links.jsp"/>
 </div>
+<div id="footer" class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col"><span>CopyRight <i class="fa fa-copyright" aria-hidden="true"></i> 2020. By Anton Yurovski</span></div>
+    </div>   
+</div>
+<script>
+    var jTextSubscribe='<fmt:message key="buttom.subscribe" bundle="${rb}"/>';
+    var jTextUnSubscribe='<fmt:message key="buttom.unsubscribe" bundle="${rb}"/>';
+    var jLoginedUserId="${sessionScope.id}";
+    var jcurrentUserId="${requestScope.currentUser.getId()}";
+</script>
+<c:import url="/jsp/common/parts/links.jsp"/>
 </body>
 </html>

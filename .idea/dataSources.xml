@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="FotoHostingEE@localhost" uuid="ce994594-e7e9-4d94-aae0-524ccddc20b6">
+    <data-source source="LOCAL" name="FotoHostingEE@localhost" uuid="dcefbfb3-698d-4258-94ac-1883b0bf4155">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/FotoHostingEE</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="FotoHostingEE@localhost [2]" uuid="30f0969b-3b4c-479f-b765-f93a35f7c17c">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:54320/FotoHostingEE</jdbc-url>
     </data-source>
   </component>
 </project>
